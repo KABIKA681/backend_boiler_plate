@@ -1,5 +1,4 @@
 import { HttpError } from "http-errors";
-
 import { app, server } from "./app";
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -36,7 +35,6 @@ function onError(error: HttpError) {
   if (error.syscall !== "listen") {
     throw error;
   }
-
   const bind = typeof port === "string" ? `Pipe ${port}` : `Port ${port}`;
 
   // handle specific listen errors with friendly messages

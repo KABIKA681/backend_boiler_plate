@@ -18,7 +18,7 @@ import * as swaggerDocument from "docs/swagger.json";
 const app: Express = express();
 const server: Server = http.createServer(app);
 
-console.log("---------------");
+console.log("-----------------------------");
 
 app.use(cors());
 app.use(logger("dev"));

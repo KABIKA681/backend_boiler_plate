@@ -10,6 +10,8 @@ const db = {} as Record<string, unknown>;
 
 const config = dbConfig[env];
 
+console.log("fffff -------", config);
+
 const { database, username, password, ...options } = config;
 
 export const sequelize = new Sequelize(database, username, password, options);
