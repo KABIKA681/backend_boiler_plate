@@ -1,4 +1,4 @@
-import { Model, DataTypes } from "sequelize";
+import { Model, DataTypes, UUID, UUIDV4 } from "sequelize";
 
 import { sequelize } from "./index";
 /**
@@ -34,23 +34,28 @@ User.init(
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
-      type: DataTypes.BIGINT,
+      type: DataTypes.UUID,
+      defaultValue: UUIDV4
     },
     firstName: {
       type: DataTypes.STRING,
+      allowNull: false
     },
     lastName: {
       type: DataTypes.STRING,
+      allowNull: false
     },
     email: {
       type: DataTypes.STRING,
       unique: true,
+      allowNull: false
     },
     picture: {
       type: DataTypes.STRING,
     },
     password: {
       type: DataTypes.STRING,
+      allowNull: false
     },
     country: {
       type: DataTypes.STRING,
