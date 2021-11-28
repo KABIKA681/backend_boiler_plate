@@ -10,7 +10,7 @@ export const FAIL = 'Fail';
 
 export const AUTHORIZED_APP_CREDENTIALS_REQUIRED = 'Login Name, API Key and App ID required';
 export const AUTHORIZED_APP_CREDENTIALS_INVALID =
-  'Login Name, API Key or App ID are not valid or have been deactivated';
+  'Login Name, API Key or App ID are not valid or have been desactivated';
 export const AUTHORIZED_APP_NOT_FOUND = 'Authorized app not found';
 export const AUTHORIZED_APP_NOT_UPDATED = 'Authorized app credentials not updated';
 export const AUTHORIZED_APP_NOT_DELETED = 'Authorized app not deleted';
