@@ -5,7 +5,7 @@ import { sequelize } from "./index";
  * User Class Model
  */
 class User extends Model {
-  id!: number;
+  id!: string;
 
   firstName!: string;
 
