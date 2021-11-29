@@ -28,7 +28,7 @@ class Country extends Model {
   public readonly updatedAt!: Date;
   
   static associate(models: any) {
-  Country.belongsToMany(models.region, {
+  Country.belongsToMany(models.subRegion, {
     through: 'CountryAssignments'
    })
 }
