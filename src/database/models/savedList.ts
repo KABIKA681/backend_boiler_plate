@@ -8,7 +8,7 @@ interface country {
     region: string,
     subRegion: string,
     currencies: string,
-    languages: string
+    languages: string,
 
 }
 class SavedList extends Model {
